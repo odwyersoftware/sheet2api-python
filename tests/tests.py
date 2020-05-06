@@ -30,7 +30,7 @@ class TestReadRows:
     def test_returns_all_rows_in_spreadsheet(self, client_fixture, request):
         client = request.getfixturevalue(client_fixture)
 
-        rows = client.read_rows()
+        rows = client.get_rows()
 
         assert rows == [{
             'name': 'Bob',
@@ -44,7 +44,7 @@ class TestReadRows:
         }]
 
     def test_returns_all_rows_for_a_specific_sheet(self, client):
-        rows = client.read_rows(sheet='Address')
+        rows = client.get_rows(sheet='Address')
 
         assert rows == [{
             'name': 'Bob',
@@ -55,7 +55,7 @@ class TestReadRows:
         }]
 
     def test_returns_filtered_rows_when_query_is_passed(self, client):
-        rows = client.read_rows(query={'name': 'Bob'})
+        rows = client.get_rows(query={'name': 'Bob'})
 
         assert rows == [{'name': 'Bob', 'age': 22}]
 
@@ -77,7 +77,7 @@ class TestCreateRow:
         added_row = client.create_row(sheet=sheet, row=row)
 
         assert added_row == row
-        assert client.read_rows(sheet=sheet) == [row] + [{
+        assert client.get_rows(sheet=sheet) == [row] + [{
             'name': 'Bob',
             'age': 22
         }, {
@@ -114,7 +114,7 @@ class TestUpdateRows:
         )
 
         assert updates_made == [{'name': name, 'age': 99999}]
-        assert client.read_rows(sheet=sheet) == [{
+        assert client.get_rows(sheet=sheet) == [{
             'name': name,
             'age': 99999
         }, {
@@ -152,7 +152,7 @@ class TestUpdateRows:
         )
 
         assert updates_made == [{'name': name}]
-        assert client.read_rows(sheet=sheet) == [{
+        assert client.get_rows(sheet=sheet) == [{
             'name': name,
             'age': 18
         }, {

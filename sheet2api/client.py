@@ -13,7 +13,7 @@ class Sheet2APIClient:
         if username:
             self._auth = HTTPBasicAuth(username, password)
 
-    def read_rows(self, *, sheet=None, query=None):
+    def get_rows(self, *, sheet=None, query=None):
         url = self._url(sheet=sheet)
         logger.info('Reading rows from sheet %s within %s...', sheet, url)
         resp = self._request('get', url, params=query)
