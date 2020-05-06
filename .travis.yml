@@ -1,0 +1,9 @@
+sudo: false
+language: python
+python:
+    - 3.8
+env:
+  - TOXENV=py-normal
+
+install: pip install tox
+script: tox
