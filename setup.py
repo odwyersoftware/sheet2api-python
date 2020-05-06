@@ -15,7 +15,7 @@ with open('requirements.txt') as f:
 with open('README.md', 'r', encoding='utf-8') as rm_file:
     readme = rm_file.read()
 
-with open('HISTORY.rst', 'r', encoding='utf-8') as hist_file:
+with open('HISTORY.md', 'r', encoding='utf-8') as hist_file:
     history = hist_file.read()
 
 setup(
@@ -25,11 +25,12 @@ setup(
     include_package_data=True,
     zip_safe=False,
     description='Google/Excel Sheets API Python.',
-    author='sheet2api',
+    author='Richard O\'Dwyer',
     author_email='sheet2api@heavyindustries.eu',
     url='https://github.com/ODwyerSoftware/sheet2api-python',
     license='Apache 2.0',
     long_description=readme + '\n\n' + history,
+    long_description_content_type='text/markdown',
     install_requires=install_requires,
     classifiers=[
         'Intended Audience :: Developers',
