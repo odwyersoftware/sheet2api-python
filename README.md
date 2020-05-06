@@ -85,7 +85,7 @@ client.update_rows(
 )
 ```
 
-Partially update rows matching a query.
+*Partially* update rows matching a query.
 
 This will only update the columns which you provide replacement values for in the `row` dict parameter. All other columns will be left unchanged.
 
