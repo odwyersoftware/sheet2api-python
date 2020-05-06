@@ -48,7 +48,7 @@ client.get_rows()
 }]
 ```
 
-To return rows from a specific Sheet.
+To return rows from a *specific* Sheet.
 
 
 ```python
