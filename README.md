@@ -2,6 +2,8 @@
 
 Google/Excel Sheets API Python Client. For use with https://sheet.com/
 
+[![Build Status](https://travis-ci.org/ODwyerSoftware/sheet2api-python.svg?branch=master)](https://travis-ci.org/ODwyerSoftware/sheet2api-python)
+
 ## Installation
 
 ```bash
@@ -21,7 +23,8 @@ client = SheetAPIClient(api_url='https://sheet2api.com/v1/FgI6zV8qT222/my-api/')
 # If your API has authentication enabled
 client = SheetAPIClient(
     api_url='https://sheet2api.com/v1/FgI6zV8qT222/my-api/',
-    username='api_username_here', password='api_password_here'
+    username='api_username_here',
+    password='api_password_here',
 )
 ```
 
