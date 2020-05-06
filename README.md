@@ -2,8 +2,7 @@
 
 Google/Excel Sheets API Python Client. For use with https://sheet.com/
 
-[![Build Status](https://travis-ci.org/ODwyerSoftware/sheet2api-python.svg?branch=master)](https://travis-ci.org/ODwyerSoftware/sheet2api-python)
-[![PyPI version](https://badge.fury.io/py/sheet2api.svg)](https://pypi.org/project/sheet2api/)
+[![Build Status](https://travis-ci.org/ODwyerSoftware/sheet2api-python.svg?branch=master)](https://travis-ci.org/ODwyerSoftware/sheet2api-python) [![PyPI version](https://badge.fury.io/py/sheet2api.svg)](https://pypi.org/project/sheet2api/)
 
 ## Installation
 
