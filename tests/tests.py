@@ -63,13 +63,14 @@ class TestReadRows:
 class TestCreateRow:
     @pytest.mark.parametrize('sheet', [None, 'Age'])
     def test_creates_a_new_row(self, client, request, sheet):
+        name = str(uuid.uuid4())
         row = {
-            'name': str(uuid.uuid4()),
+            'name': name,
             'age': 18,
         }
 
         def fin():
-            client.delete_rows(sheet=sheet, query=row)
+            client.delete_rows(sheet=sheet, query={'name': name})
 
         request.addfinalizer(fin)
 
