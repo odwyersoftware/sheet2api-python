@@ -69,7 +69,7 @@ client.get_rows(query={'name': 'Bob'})
 ### Create a new row
 
 ```python
-client.create_row(sheet='Sheet1', row={'name': 'Jane','age': 18,})
+client.create_row(sheet='Sheet1', row={'name': 'Jane','age': 18})
 ```
 
 ### Update all rows which match a query
