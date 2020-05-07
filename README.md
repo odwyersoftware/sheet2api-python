@@ -107,3 +107,7 @@ client.update_rows(
 ```python
 client.delete_rows(sheet='Sheet1', query={'name': 'Satan'})
 ```
+
+## Support
+
+[Contact support](https://sheet2api.com/contact/)
