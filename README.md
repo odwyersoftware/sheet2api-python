@@ -32,7 +32,7 @@ client = SheetAPIClient(
 
 ### Get all rows
 
-Returns all rows within the **first** Sheet of your Spreadsheet.
+Returns all rows within the *first* Sheet of your Spreadsheet.
 
 ```python
 client.get_rows()
