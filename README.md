@@ -14,7 +14,7 @@ pip install sheet2api
 
 ## Usage Examples
 
-Before starting you should head over to [https://sheet2api.com/](https://sheet2api.com/documentation/) and link up your Google Sheets or Excel Online account and create your first Spreadsheet API.
+Before starting you should head over to [https://sheet2api.com/](https://sheet2api.com/documentation/) and link up your Google Sheets or Excel Online account and [create your first Spreadsheet API](https://sheet2api.com/account/create_spreadsheet).
 
 Next, create an instance of the client and pass in the API URL to your API.
 
