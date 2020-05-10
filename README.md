@@ -98,6 +98,7 @@ client.update_rows(
     row={
         'age': 99999
     },
+    partial_update=True,
 )
 ```
 

@@ -4,7 +4,7 @@ Release History
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Documentation updates.
 
 
 0.1.1 (2020-05-07)
