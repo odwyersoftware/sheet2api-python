@@ -4,7 +4,7 @@ Release History
 0.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Docs fixes.
 
 
 0.1.2 (2020-05-10)

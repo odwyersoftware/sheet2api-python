@@ -19,11 +19,11 @@ Before starting you should head over to [sheet2api.com](https://sheet2api.com/do
 Next, create an instance of the client and pass in the API URL to your API.
 
 ```python
-from sheet2api import SheetAPIClient
+from sheet2api import Sheet2APIClient
 
-client = SheetAPIClient(api_url='https://sheet2api.com/v1/FgI6zV8qT222/my-api/')
+client = Sheet2APIClient(api_url='https://sheet2api.com/v1/FgI6zV8qT222/my-api/')
 # If your API has authentication enabled
-client = SheetAPIClient(
+client = Sheet2APIClient(
     api_url='https://sheet2api.com/v1/FgI6zV8qT222/my-api/',
     username='api_username_here',
     password='api_password_here',
